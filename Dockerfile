@@ -18,3 +18,4 @@ RUN go build -o app-server
 EXPOSE $PORT
 
 CMD [ "./app-server" ]
+
