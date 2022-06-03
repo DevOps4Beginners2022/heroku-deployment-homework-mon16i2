@@ -1,6 +1,6 @@
 FROM golang:1.17-alpine
 
-ARG PORT=80
+ARG PORT=8080
 
 ENV PORT=$PORT
 
@@ -17,5 +17,4 @@ RUN go build -o app-server
 
 EXPOSE $PORT
 
-CMD go run main.go
-
+CMD [ "./app-server" ]
